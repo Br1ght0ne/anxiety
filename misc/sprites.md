@@ -1,23 +1,23 @@
-LOADING
+ЗАГРУЗКА
 
-GO!
+ГРАТИ!
 
-ADVENTURES WITH ANXIETY
+ПРИГОДИ З ТРИВОГОЮ
 
-PLAYTIME: 30 MIN
+ЧАС ГРИ: 30 ХВ.
 
-by NICKY CASE & MONPLAISIR
+СТВОРЕНО NICKY CASE & MONPLAISIR
 
-harm
+шкода
 
-unloved
+нелюб
 
-bad
+погано
 
-YOU WIN!
+ТИ ПЕРЕМІГ!
 
-YOU, uh, WIN...
+ТИ, ем, ПЕРЕМІГ...
 
-RIP PHONE
+РІП ТЕЛЕФОН
 
-LAKE TEARS
+ОЗЕРО СЛІЗ
