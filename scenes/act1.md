@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: І ЦЕ ЛЮДСЬКА ТРИВОГА
 
-n: _YOU_ ARE THE ANXIETY
+n: _ТИ_ Є ТРИВОГОЮ
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: Ох, гей! Ми тут знову?
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: ТВОЯ РОБОТА ОБЕРІГАТИ СВОЮ ЛЮДИНУ ВІД *ЗАГРОЗ*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: ДО РЕЧІ, ПОВТОРНА ГРА НАРАЖАЄ ЇЇ НА *ЗАГРОЗУ* ПРЯМО ЗАРАЗ
 
-n: QUICK, WARN THEM!
+n: ШВИДШЕ, ПОПЕРЕДЬ ЇЇ!
 
 ```
 sfx("squeak");
@@ -42,13 +42,13 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The player...
+b: Людино! Слухай, ми у небезпеці! Гравець...
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...буде катувати нас знову!](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...не знайде іншої кінцівки!](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...отримає лудонаративний дисонанс!](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,32 +59,31 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: Він скрутить нас у клубок і ми плакатимемо!
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: Він змусить нас розбити телефон, щоб у тебе була панічна атака!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: Він змусить нас *НЕ* бити власника вечірки!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: Він змусить нас ударити симпатичного анти-злодія власника вечірки!
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
-{{/if}}
+h: Ну, можливо ми не зістрибнемо з даху цьго ра--
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b: ВІН ЗАСТАВИТЬ НАС ЗІСТРИБНУТИ.
 {{/if}}
 
 `bb({body:"fear"});`
 
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+b: ВІН ЗРОБИТЬ ІЗ НАМИ ВСІ ЦІ ЖАХЛИВІ РЕЧІ, А ТОДІ МИ--
 
 (#act1_replay_end)
 
@@ -96,11 +95,11 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
+h: Звісно, історія *взагальному* така ж, але в кожного розділу є два закінчення, плюс всі варіанти діало--
 
 `bb({body:"fear"});`
 
-b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+b: Гравець буде розчарованим, закривай цю вкладку, видаляй програму, і тоді ми--
 
 (#act1_replay_end)
 
@@ -112,27 +111,27 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: A lewd-what now?
+h: Непристойне що тепер?
 
 `bb({eyes:"normal"});`
 
-b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
+b: Ця арка історії була про те, що ти можеш *ВИБИРАТИ*, щоб побудувати здорові відносини зі своїм страхом,
 
 `bb({eyes:"normal_right"});`
 
-b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
+b: Але повторна гра приведе до минулого закінчення, ваші нові *ВИБОРИ* не враховуються,
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: Thus showing a contradiction between the game's message and mechanics,
+b: Таким чином, можна побачити протиріччя між посилом та механікою гри,
 
 `bb({eyes:"fear"});`
 
-b: Thus unraveling the fabric of this narrative universe,
+b: Таким чином розгадуючи суть цього закрученого світу,
 
 `bb({body:"fear"});`
 
-b: And then we'll--
+b: І тоді ти--
 
 (#act1_replay_end)
 
@@ -141,7 +140,7 @@ b: And then we'll--
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: ВМРЕЕЕЕЕШШШ
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -164,13 +163,13 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-h: Okay let's get back into character.
+h: Окей, повернімось до розділу.
 
 ```
 Game.clearText();
 ```
 
-n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
+n4: (ДАЙ _СВОЇЙ_ ТРИВОЗІ БЛА БЛА НАЙБІЛЬШ СХОЖЕ ДО _ТВОГО_ СТРАХУ БЛА БЛА ТИ ЗНАЄШ ПРАВИЛА)
 
 ```
 sfx("squeak");
@@ -186,17 +185,17 @@ bb({body:"squeeze"});
 
 `hong({mouth:"0_neutral", eyes:"0_annoyed"})`
 
-h: Oh good, my wolf's back. Faaaaantastic.
+h: Ох, чудово, мій вовк повернувся. Фаааантастично.
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: ТВОЯ РОБОТА ОБЕРІГАТИ СВОЮ ЛЮДИНУ ВІД *ЗАГРОЗИ*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: ДО РЕЧІ, ЦЕЙ БУТЕРБРОД Є *НЕБЕЗПЕКОЮ* НАВІТЬ ЗАРАЗ
 
-n: QUICK, WARN THEM!
+n: ШВИДШЕ, ПОПЕРЕДЬ ЇЇ!
 
 ```
 sfx("squeak");
@@ -204,21 +203,21 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The danger is...
+b: Людино! Слухай, ти у небезпеці! І це...
 
 `bb({body:"squeeze"})`
 
-n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+n4: (ДАЙ _СВОЇЙ_ ТРИВОЗІ ВИЙТИ ГРАТИ! ВИБЕРИ НАЙБІЛЬШ СХОЖЕ ДО _СВОГО_ СТРАХУ)
 
 (#act1_normal_choice)
 
 # act1_normal_choice
 
-[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+[Ти знов обідаєш одна! Знову!](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
+[Ти не продуктивна поки їси!](#act1a_productive) `bb({body:"squeeze_talk"})`
 
-[That white bread's bad for us!](#act1a_bread) `bb({body:"squeeze_talk"})`
+[Цей білий хліб шкідливий для тебе!](#act1a_bread) `bb({body:"squeeze_talk"})`
 
 # act1a_alone
 
@@ -227,7 +226,7 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Don't you know loneliness is associated with premature death as much as smoking 15 cigarettes a day?-
+b: Ти знаєш, що самотність асоціюється з предчасною смертю , так само як викурені 15 сигарет за день?-
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
@@ -237,17 +236,17 @@ b: (Holt-Lunstad 2010, PLoS Medicine)
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, thanks for citing your sources but--
+h: Ем, дякую за інформацію але--
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
 `bb({body:"fear", mouth:"normal", eyes:"fear"})`
 
-b: Which means if we don't hang out with someone *right now* we're gonna-
+b: Що означає, якщо ти не будеш тусуватись з кимось *прямо зараз* ти-
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: ВМРЕЕЕЕЕШШШ
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -260,7 +259,7 @@ publish("hp_show");
 
 `_.fifteencigs = true`
 
-n: YOU USED *FEAR OF BEING UNLOVED*
+n: ТИ ВИКОРИСТАВ *СТРАХ БУТИ САМОТНЬОЮ*
 
 (#act1b)
 
@@ -271,27 +270,27 @@ bb({body:"normal", mouth:"small", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-b: Whip out your laptop and do some work right now!
+b: Відкрий свій ноутбук і почни щось робити зараз!
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, I'd rather not get crumbs in my keyboa--
+h: Ем, краще щоб крихти не попадали на мою клав--
 
 ```
 bb({mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: If we're not contributing to the body of society then we're a society-parasite!
+b: Якщо ти нічого не принесеш для цього соціо-тіла, це означає що ти - соціо-паразит!
 
-b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+b: Соціо-тіло піде до соціо-лікаря за ліками, щоб витравити соціо-паразита, а тоді ти--
 
 ```
 bb({body:"panic", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: ВМРЕЕЕЕЕШШШ
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -304,7 +303,7 @@ publish("hp_show");
 
 `_.parasite = true`
 
-n: YOU USED *FEAR OF BEING A BAD PERSON*
+n: ТИ ВИКОРИСТАВ *СТРАХ БУТИ ЖАХЛИВОЮ*
 
 (#act1b)
 
@@ -315,18 +314,18 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich", eyes:"0_annoyed"});
 ```
 
-h: Have those studies been replicat--
+h: Чи були ці досліди відтво--
 
 ```
 bb({body:"fear", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+b: Зрозумій, борошно наповнить нашу кров цукром, лікарі ампутують наші кінцівки, і тоді ти-
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: ВМРЕЕЕЕЕШШШ
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -339,37 +338,37 @@ publish("hp_show");
 
 `_.whitebread = true`
 
-n: YOU USED *FEAR OF BEING HARMED*
+n: ТИ ВИКОРИСТАВ *СТРАХ БУТИ ПОРЕНЕНОЮ*
 
 (#act1b)
 
 # act1b
 
-n: IT'S SUPER EFFECTIVE
+n: ЦЕ НАДЗВИЧАЙНО ЕФЕКТИВНО
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: See, human? I am your loyal guard-wolf!
+b: Бачиш, людино? Я твій вірний вовк-захисник!
 
 `bb({body:"pride_talk"});`
 
-b: Trust your gut! Your feelings are always valid!
+b: Довірся своїм відчуттям! Вони завжди праві!
 
 `bb({body:"pride"});`
 
-n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+n: ОПУСТИ ШКАЛУ ЕНЕРГІЇ ЛЮДИНИ ДО НУЛЯ
 
-n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+n: ЩОБ ОБЕРІГАТИ ЇЇ ФІЗИЧНІ + СОЦІАЛЬНІ + МОРАЛЬНІ ПОТРЕБИ, ТИ МОЖЕШ ВИКОРИСТАТИ:
 
-n: FEAR OF *BEING HARMED* #harm#
+n: СТРАХ *БУТИ ПОРЕНЕНОЮ* #harm#
 
-n: FEAR OF *BEING UNLOVED* #alone#
+n: СТРАХ *БУТИ САМОТНЬОЮ* #alone#
 
-n: AND FEAR OF *BEING A BAD PERSON* #bad#
+n: І СТРАХ *БУТИ ЖАХЛИВОЮ* #bad#
 
 `Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
-n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+n4: (ПІДКАЗКА: ВИБИРАЙ САМЕ ТЕ, ЩО БЛИЗЬКЕ ДО ТЕБЕ, НАЙТЕМНІШІ СТРАХИ!~)
 
 h: ...
 
@@ -383,18 +382,18 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-h: you know what maybe it's time to check my phone.
+h: знаєш що, час чекнути мій мобільний.
 
 ```
 sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: PROTECT YOUR HUMAN
+n: ОБЕРІГАЙ СВОЮ ЛЮДИНУ
 
-n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+n: ВІД СВІТУ. ВІД ІНШИХ ЛЮДЕЙ. ВІД НИХ.
 
-n: GOOD LUCK
+n: ЩАСТИ
 
 (...500)
 
@@ -408,38 +407,38 @@ n: GOOD LUCK
 
 `music('battle', {volume:0.5})`
 
-n: ROUND ONE: *FIGHT!*
+n: РАУНД ПЕРШИЙ: *БОРИСЬ!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h: Хах. У Фейсбуці кажуть, що цими вихідними буде вечірка.
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: То ті диваки, що влаштовують вечірки *кожні* вихідні дні?
 
 `bb({eyes:"uncertain_right"});`
 
-b: What inner void are they trying to fill? They must be deeply messed up inside!
+b: Яку внутрішню пустоту вони намагаються заповнити? Напевно, вони жахливі всередині!
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: І ще, мене запросили?
 
 `bb({eyes:"fear", mouth:"normal"});`
 
-b: Well then!
+b: Тоді гаразд!
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[Скажи так, інакше ми вмрем від самотності!](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[Відмовся, там буде повно отруйних наркотиків!](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[Проігноруй, ми лише там всіх засмутим.](#act1c_sad)
 
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+b: П'ятнадцять сигарет на день, людино! П'ятнадцять!
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -447,11 +446,11 @@ b: Fifteen cigarettes a day, human! Fifteen!
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+b: Ніхто не прийде на твій похорон, вони просто розвіють твій прах в океан, тебе з'їдять кити,
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+b: і ти станеш ^ГІМНОМ^ КИТА!
 {{/if}}
 
 {{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
@@ -468,25 +467,25 @@ attack("18p", "alone");
 `bb({eyes:"normal"});`
 
 {{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+b: А тому, ми повинні піти на вечірку!
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b: Просто візьми ноутбук, щоб ми працювали, і не були соціо-паразитом.
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: Доки, поки вони не будуть подавати БІЛИЙ ХЛІБ
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: БОЖЕ. Якщо ти заткнешся, тоді гаразд.
 
-h: I'll say yes.
+h: Я погоджусь.
 
 {{if _.whalepoop}}
-b: Whale poop, human! Whale poop!
+b: ^Гімно^ кита, людино! ^Гімно^ кита!
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -498,7 +497,7 @@ b: Whale poop, human! Whale poop!
 `bb({mouth:"small", eyes:"fear"});`
 
 {{if _.whitebread}}
-b: or even worse... WHITE BREAD
+b: або навіть гірше... БІЛИЙ ХЛІБ
 {{/if}}
 
 {{if _.whitebread}}
@@ -506,11 +505,11 @@ b: or even worse... WHITE BREAD
 {{/if}}
 
 {{if _.whitebread}}
-b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+b: У нас буде передоз від метамфетаміну і білого хліба, а тоді вони не зможуть помістити наш жирний труп у крематорій!
 {{/if}}
 
 {{if !_.whitebread}}
-b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+b: Ти отримаєш передоз від неймовірної кількості наркоти, що всі будуть дивуватись, як ти *вже* забальзамувалася!
 {{/if}}
 
 ```
@@ -521,14 +520,14 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.parasite}}
-b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+b: Ти не можеш веселитись, тобі потрібно працювати, щоб не бути соціо-паразитом!
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: БОЖЕ. Якщо ти заткнешся, гаразд.
 
-h: I'll say no.
+h: Я відмовлюсь.
 
 `_.partyinvite="no"`
 
@@ -541,15 +540,15 @@ h: I'll say no.
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.fifteencigs}}
-b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+b: Все що ми робим - плачем у кутку від того, що самотність така ж небезпечна як 15 сигарет.
 {{/if}}
 
 {{if _.parasite}}
-b: All we ever do at parties is worry about how we should be productive instead.
+b: На вечірці ти лише хвилюєшся за свою продуктивність.
 {{/if}}
 
 {{if _.whitebread}}
-b: All we ever do is worry about how the unhealthy food options are going to kill us.
+b: Ти постійно хвилюєшся про шкідливу їжу, яка може вбити тебе.
 {{/if}}
 
 ```
@@ -557,19 +556,19 @@ bb({mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"lookaway"});
 ```
 
-h: gee i wonder why.
+h: бож, дивуюсь чому.
 
 `hong({eyes:"neutral"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
+b: Якщо ми прийдемо - їм буде сумно через нас, але якщо ми відмовимся вони також засмутяться!
 
 `bb({body:"fear", eyes:"fear"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
+b: ТИ ПРИНОСИШ ЛИШЕ ШКОДУ ЛЮДЯМ, ТОМУ ТОБІ МАЄ БУТИ ПОГАНО
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -580,9 +579,9 @@ attack("18p", "bad");
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: Ugh. If it'll make you shut up, fine.
+h: Ех. Якщо ти заткнешся, гаразд.
 
-h: I'll ignore the invite.
+h: Я проігнорую запрошення.
 
 `_.partyinvite="ignore"`
 
@@ -595,19 +594,19 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"annoyed"});
 ```
 
-h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
+h: Все одно. Досить з мене Фейсбуку. Мені потрібне щось спокійніше, менш тривожне.
 
 `hong({eyes:"neutral"});`
 
-h: What's new on Twitter?
+h: Що нового у Твіттері?
 
 `bb({eyes:"look"});`
 
-[Oh no, look at that horrible news story!](#act1d_news)
+[Оу ні, подивись на цю жахливу новину!](#act1d_news)
 
-[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+[Оу ні, невже цей твіт насправді про *нас?*](#act1d_subtweet)
 
-[Hey, a GIF of a cat drinking milk](#act1d_milk)
+[Гей, гіфка кота, що п'є молоко.](#act1d_milk)
 
 
 # act1d_news
@@ -617,14 +616,14 @@ bb({eyes:"pained1"});
 music(null, {fade:2});
 ```
 
-b: God, it feels like the world's burning, isn't it?
+b: Боже, таке відчуття, ніби цей світ руйнується, правда?
 
 ```
 bb({eyes:"pained2"});
 hong({mouth:"sad", eyes:"sad"});
 ```
 
-b: It feels like it's all ending, like everything's dying and we're doomed and there's nothing we can do about it.
+b: Начебто, все закінчується, вмирає, і ми приречені та не можемо якось запобігти цьому.
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 0.5;
@@ -635,7 +634,7 @@ b: ...
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: Let's retweet that story!
+b: Давай зробимо ретвіт цієї історії!
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -653,11 +652,11 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Okay I'll retweet it just please be quiet!
+h: Окей, добре, добре, просто сиди тихіше!
 
 `hong({mouth:"neutral", eyes:"annoyed"});`
 
-h: Screw it, let's look at Snapchat.
+h: Ну і чорт з ним, я у Снепчат.
 
 (#act1e)
 
@@ -666,35 +665,35 @@ h: Screw it, let's look at Snapchat.
 
 `bb({eyes:"fear"});`
 
-b: It's a subtweet! A sneaky, sneaky subtweet!
+b: Це сабтвіт! Підлий, підлий сабтвіт!
 
 `hong({eyes:"annoyed"});`
 
-h: It's probably not?
+h: Ні, це не так?
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: but what if they're all talking behind our back
+b: але якщо вони обговорюють тебе поза спиною?
 
-h: They're n--
+h: Вони н--
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"});`
 
-b: IN FRONT OF OUR BACK
+b: НАВПРОТИ НАШОЇ СПИНИ
 
 `hong({eyes:"sad", mouth:"sad"});`
 
-h: I d--
+h: Я --
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: but *what if*
+b: але *якщо*
 
-h: S--
+h: З--
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: *what if*
+b: *якщо*
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 0.5;
@@ -719,7 +718,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: о-КЕЙ, загляну в Снепчат.
 
 (#act1e)
 
@@ -727,7 +726,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"smile", eyes:"neutral"});`
 
-h: Heh ya that's cute, just retweeted it, I thi--
+h: Хех, красунчик, хочу це ретвітнути, я ду--
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -735,7 +734,7 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+b: КОТИ НЕ ПЕРЕТРАВЛЮЮТЬ МОЛОКО, ЯКА ТИ ЖАХЛИВА, ЗА ТЕ ЩО НАСОЛОДЖУЄШСЯ НАСИЛЬСТВОМ
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -752,7 +751,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: о-КЕЙ, загляну в Снепчат.
 
 (#act1e)
 
@@ -760,7 +759,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"neutral", eyes:"neutral"});`
 
-h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+h: Хех, вчорашнє фото. Тоді *саме так* виглядають всі ці вечірки.
 
 {{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
 
@@ -772,29 +771,29 @@ h: Huh, photos from yesterday night. So *that's* what those weekly parties are l
 
 `hong({mouth:"sad", eyes:"annoyed"});`
 
-h: Oof, looks way too crowded for my anxiety.
+h: У-ух, виглядає затісно для моєї тривоги.
 
-h: Maybe I shouldn't have said yes to the invite?
+h: Можливо, мені потрібно було відмовити?
 
 ```
 hong({mouth:"neutral", eyes:"neutral"});
 bb({mouth:"normal", eyes:"normal"});
 ```
 
-[Change our answer? Like a jerk?!](#act1e_yes_dontchange)
+[Змінити відповідь? Як ^придурок^?!](#act1e_yes_dontchange)
 
-[Change our answer! It's too crowded!](#act1e_yes_changetono)
+[Зміни відповідь! Там затісно!](#act1e_yes_changetono)
 
 {{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+[Та-ак, вони точно нас обговорють.](#act1e_ignore_subtweet)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[Зачекай, ти ретвітнула це та нічого не перевірила.](#act1e_ignore_factcheck)
 {{/if}}
 
 {{if (!_.subtweet && !_.badnews)}}
-[You know, you've got really bad posture?](#act1e_ignore_posture)
+[Ти знаєш, що у тебе жахлива постава?](#act1e_ignore_posture)
 {{/if}}
 
 # act1e_yes_dontchange
@@ -804,14 +803,14 @@ bb({eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+b: Вони розраховували на те що ти прийдеш, і тепер ти їх зраджуєш? Ти хочеш вмерти одна?!
 
 {{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+b: П'ЯТНАДЦЯТЬ. СИГАРЕТ.
 {{/if}}
 
 {{if _.whalepoop}}
-b: WHALE. POOP.
+b: ^ГІМНО^. КИТА.
 {{/if}}
 
 ```
@@ -826,7 +825,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll keep it as yes!
+h: Заткнись, заткнись. Я йду і крапка!
 
 (#act1f)
 
@@ -837,7 +836,7 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Don't you know about human stampedes?
+b: Ти знаєш наскільки небезпечні тисняви?
 
 ```
 bb({body:"fear", mouth:"small", eyes:"narrow"});
@@ -845,7 +844,7 @@ hong({eyes:"sad", mouth:"sad"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+b: 2003-го року в нічному клубі Род-Айленду була пожежа. Люди запанікували, і тиснява зі 100 людей згоріла в вогні-
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -853,14 +852,14 @@ hong({mouth:"shock"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: DO YOU WANT THAT TO HAPPEN TO US-
+b: ТИ ХОЧЕШ ЩОБ ЦЕ СТАЛОСЬ З ТОБОЮ-
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 2.5;
 ```
 
-b: SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY N-
+b: СКАЖИ НІ, СКАЖИ НІ, СКАЖИ НІ, СКАЖИ НІ, СКАЖИ Н-
 
 
 ```
@@ -876,7 +875,7 @@ hong({eyes:"anger", mouth:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll change my answer to no! God!
+h: Заткнись, заткнись, я відмовлюсь! Боже!
 
 (#act1f)
 
@@ -884,35 +883,35 @@ h: Shut up shut up I'll change my answer to no! God!
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: Гм... це виглядає весело.
 
-h: Maybe I shouldn't have said no to the invite?
+h: Мабуть, я краще б погодилась?
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Change our answer? Like a jerk?!](#act1e_no_dontchange)
+[Змінити нашу відповідь? Як ^придурок^?!](#act1e_no_dontchange)
 
-[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+[Зміни відповідь! Не помри самотньою!](#act1e_no_changetoyes)
 
 {{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+[Та-ак, вони твітять саме про нас.](#act1e_ignore_subtweet)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[Зачекай, ти ретвітнула це та нічого не перевірила..](#act1e_ignore_factcheck)
 {{/if}}
 
 {{if (!_.subtweet && !_.badnews)}}
-[You know, you've got really bad posture?](#act1e_ignore_posture)
+[Ти знаєш, у тебe жахлива постава?](#act1e_ignore_posture)
 {{/if}}
 
 # act1e_no_dontchange
 
 `bb({eyes:"anger"})`
 
-b: Everybody was counting on us!
+b: Всі розразовували на тебе..!
 
-b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+b: ...залишити їх в спокої, щоб у них була прекрасна вечірка без жахливих, нестерпних {{if _.whitebread}}біло-хлібно-жувальних{{/if}} страшил як ти--
 
 
 ```
@@ -928,7 +927,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll keep it as no!
+h: Заткнись, заткнись. Я не погоджусь!
 
 (#act1f)
 
@@ -939,7 +938,7 @@ bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+b: Хронічна самотність збільшує рівень кортизолу з ризиком серцево-судинних захворювань та інсульту!
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -949,7 +948,7 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+b: П'ЯТНАДЦЯТЬ. СИГАРЕТ.
 {{/if}}
 
 ```
@@ -958,7 +957,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll change my answer to yes! God!
+h: Заткнись, заткнись, я погоджусь! Боже!
 
 (#act1f)
 
@@ -969,14 +968,14 @@ bb({eyes:"fear", mouth:"small"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: All our problematic tweets have come back to roost!
+b: Всі твої проблемні твіти виплили на чисту воду!
 
 ```
 bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.7;
 ```
 
-b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+b: Нас закенселять, викрадуть, прив'яжуть мотузкою до коня, і відправлять на вершину інформаційної гори! 
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -991,7 +990,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Why are you like this?!
+h: Чому ти така?!
 
 (#act1f)
 
@@ -1002,14 +1001,14 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're spreading disinformation! We're destroying trust in a free press!
+b: Ти поширюєш фейки! Ти руйнуєш довіру до вільної преси!
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're the reason fascism will arise from the rubble of democracy!
+b: Ти станеш причиною повернення фашизму з уламків демократії!
 
 ```
 bb({body:"normal", eyes:"anger"});
@@ -1025,7 +1024,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 _.factcheck = true;
 ```
 
-h: Why are you like this?!
+h: Чому ти така?!
 
 (#act1f)
 
@@ -1036,13 +1035,13 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do you want to have a pretzel for a spine?! Stop hunching over your screen!
+b: Ти хочеш скривлений хребет?! Припини горбитись над екраном!
 
 ```
 bb({body:"meta"});
 ```
 
-b: That means you too.
+b: Ти теж.
 
 ```
 bb({body:"normal", mouth:"normal"});
@@ -1058,7 +1057,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Why are you like this?!
+h: Чому ти така?!
 
 (#act1f)
 
@@ -1066,27 +1065,27 @@ h: Why are you like this?!
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: Гм... виглядає весело.
 
-h: Maybe I shouldn't have ignored the invite?
+h: Мабуть, я не мала б ігнорувати запрошення?
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+[Продовжуй ігнорувати, ту тусуєшся як ^гімно^.](#act1e_ignore_continue)
 
-[Actually, say yes.](#act1e_ignore_changetoyes)
+[Дійсно, скажи так.](#act1e_ignore_changetoyes)
 
-[Actually, say no.](#act1e_ignore_changetono)
+[Дійсно, скажи ні.](#act1e_ignore_changetono)
 
 # act1e_ignore_continue
 
 `hong({eyes:"annoyed"});`
 
-h: It's kinda rude to keep ignoring them though, no?
+h: Це дещо грубо так ігнорити людину, чи не так?
 
 `bb({eyes:"normal_right"});`
 
-b: Well other people always ignore *us*, so
+b: Ну, інші люди завжди ігнорять *мене*, тому
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1097,7 +1096,7 @@ attack("18p", "alone");
 
 `bb({eyes:"normal"});`
 
-b: so let's just call it even.
+b: нехай це буде нічия.
 
 (#act1f)
 
@@ -1105,9 +1104,9 @@ b: so let's just call it even.
 
 `hong({eyes:"surprise", mouth:"smile"});`
 
-h: You're... letting me have fun?
+h: Ти... дозволяєш мені веселитись?
 
-b: Well, I mean, loneliness *can* kill us.
+b: Ну, я маю на увазі, що самотність *може* вбити тебе.
 
 `hong({eyes:"neutral", mouth:"neutral"});`
 
@@ -1117,7 +1116,7 @@ b: Well, I mean, loneliness *can* kill us.
 
 `bb({eyes:"narrow"});`
 
-b: It's too crowded. Crowds are dangerous.
+b: Тут надто тісно. Натовп небезпечний.
 
 (#act1e_yes_changetono)
 
@@ -1129,60 +1128,60 @@ hong({mouth:"neutral", eyes:"neutral"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: Whatever. New Tinder notification.
+h: Гаразд. М, нове повідомлення з Тіндеру.
 
 `bb({eyes:"uncertain"})`
 
-b: What, that hookup app?
+b: Що, цей жахливий додаток?
 
 `hong({eyes:"annoyed"})`
 
-h: It's not a hookup app, it's just a way to meet new peopl--
+h: Він не жахливий, тут просто можна зустріти нових лю--
 
 `bb({eyes:"narrow"})`
 
-b: It's a hookup app.
+b: Це - мерзотний додаток.
 
 ```
 hong({eyes:"surprise", mouth:"smile"});
 bb({eyes:"normal"});
 ```
 
-h: Oh, I got a match! They look cute!
+h: О, у мене збіг! Він виглядає милим!
 
 ```
 bb({eyes:"narrow_eyebrow"});
 hong({eyes:"sad", mouth:"anger"})
 ```
 
-h: Please don't ruin this for m--
+h: Будь ласка, не руйнуй для ме--
 
 ```
 bb({body:"panic"});
 Game.OVERRIDE_TEXT_SPEED = 2.0;
 ```
 
-b: DANGER DANGER DANGER DANGER DANGER DANGER
+b: НЕБЕЗПЕКА НЕБЕЗПЕКА НЕБЕЗПЕКА НЕБЕЗПЕКА
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"})`
 
-[We're being *used* by other people.](#act1f_used_by_others)
+[Тебе *використовують* інші люди.](#act1f_used_by_others)
 
-[We're just *using* other people.](#act1f_using_others)
+[Ти *використовуєш* людей.](#act1f_using_others)
 
-[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
+[ЦЕ МОЖЕ БУТИ СЕРІЙНИЙ ВБИВЦЯ](#act1f_killer)
 
 # act1f_used_by_others
 
 `bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
 
-b: Random hookups may be able to fill the hole down there,
+b: Такі зустрічі можуть заповнити низ дірки,
 
-b: but they can never fill the hole...
+b: але не заповнити усю дірку...
 
 `bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
 
-b: in *here*.
+b: *тут*.
 
 (...1000)
 
@@ -1191,7 +1190,7 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: The point is WE'RE GOING TO DIE ALONE
+b: Ти ПОМРЕШ САМОТНЯ
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1208,7 +1207,7 @@ attack("18p", "alone");
 
 `bb({eyes:"narrow", mouth:"small"})`
 
-b: You think other people's genitals are Pokémon for us to collect?
+b: Ти думаєш, чужі геніталії це покемони для колекціювання?
 
 ```
 bb({body:"sing", eyes:"pretty", mouth:"shut"});
@@ -1222,7 +1221,7 @@ Game.FORCE_TEXT_DURATION = 1000;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: ♫ (pokemon theme song)-
+b: ♫ (тема з покемонів)-
 
 (...5600)
 
@@ -1231,7 +1230,7 @@ bb({mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2400;
 ```
 
-b: ♫ I wanna be, the ^slut^ti-est-
+b: ♫ Я хочу бути, най^збоченкою^-
 
 (...500)
 
@@ -1240,7 +1239,7 @@ bb({eyes:"narrow", mouth:"small"});
 Game.FORCE_TEXT_DURATION = 2100;
 ```
 
-b: ♫ Like no one ever was-
+b: ♫ Як ніхто ніколи не був-
 
 (...1500)
 
@@ -1249,7 +1248,7 @@ bb({eyes:"pretty"});
 Game.FORCE_TEXT_DURATION = 2300;
 ```
 
-b: ♫ Thighs n' ^ass^, voluptuous breast-
+b: ♫ Стегна й ^срака^, розкішні ^цицьки^-
 
 (...500)
 
@@ -1258,7 +1257,7 @@ bb({eyes:"fear", mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2000;
 ```
 
-b: ♫ with sweaty ^dick^ and balls!-
+b: ♫ з солоденьким ^членом^ та ^яйцями^!-
 
 (...1000)
 
@@ -1267,7 +1266,7 @@ bb({eyes:"smile", mouth:"smile"});
 Game.FORCE_TEXT_DURATION = 1000;
 ```
 
-b: ♫ PERVY-MON! GOTTA CA-
+b: ♫ ЗБОЧЕН-КА! ПІЙМАЛА-
 
 ```
 Game.FORCE_CANT_SKIP = false;
@@ -1277,7 +1276,7 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: The point is we're a manipulative creep.
+b: Річ в тому, що ти - маніпулятор.
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1295,19 +1294,19 @@ attack("18p", "bad");
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.whitebread}}
-b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+b: Вони заточать тебе в колодязі, і насильно відкормлять білим хлібом так, що тобі не потрібно буде одягатись, а все буде прикрите жиро-костюмом!
 {{/if}}
 
 {{if _.parasite}}
-b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+b: Вони запустять бладжон та увімкнуть помодоро таймер, і будуть повторювати "ТАКИЙ ПАРАЗИТ ЯК ТИ, МАЄ БУТИ ПРОДУКТИВНІШИМ"
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+b: Вони розірвуть твої м'язи у конфеті, з жил зроблять розтяжки, і твою кров перероблять у пунш!
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: How's THAT for a party invite?!
+b: Як ЦЕ може бути запрошенням?!
 {{/if}}
 
 ```
@@ -1334,44 +1333,44 @@ h: ...
 
 (...500)
 
-h: i'm so sick of this game.
+h: мені так набридла ця гра.
 
 (...700)
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 h:
-{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
-{{if _.parasite}}"we're a society-parasite"... {{/if}}
-{{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
-{{if _.subtweet}}"they're talking behind our back"... {{/if}}
-{{if _.badnews}}"the world is burning"... {{/if}}
-{{if _.hookuphole}}"we'll die alone"... {{/if}}
-{{if _.serialkiller}}"they're a serial killer"... {{/if}}
-{{if _.catmilk}}"cats can't digest milk"... {{/if}}
-{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
+{{if _.fifteencigs}}"самотність вб'є нас"... {{/if}}
+{{if _.parasite}}"ми - соціо-паразит"... {{/if}}
+{{if _.whitebread}}"не їж це - воно вб'є нас"... {{/if}}
+{{if _.subtweet}}"вони говорять за нашою спиною"... {{/if}}
+{{if _.badnews}}"світ горить"... {{/if}}
+{{if _.hookuphole}}"ми помремо самотні"... {{/if}}
+{{if _.serialkiller}}"вони - серійний вбивця"... {{/if}}
+{{if _.catmilk}}"коти не перетравлюють молоко"... {{/if}}
+{{if _.pokemon}}"^гімняна^ пародія..." {{/if}}
 
-h: i just want to live my life.
+h: я хочу лише спокійного життя.
 
-h: i just want to be free from all this... pain.
+h: я хочу бути вільною від цього... болю.
 
 `bb({eyes:"look_sad"});`
 
-b: Hey... human...
+b: Гей... людино...
 
 `Game.OVERRIDE_TEXT_SPEED = 0.5;`
 
-b: It'll be okay.
+b: Все буде добре.
 
 (...600)
 
 `bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
 
-b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+b: Як твій вірний вовк-захисник, я буду оберігати тебе від небезпеки, старатись, щоб ти була в безпеці.
 
 `bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
 
-b: I promise.
+b: Я обіцяю.
 
 (...600)
 
@@ -1380,29 +1379,29 @@ bb({body:"normal", eyes:"normal", mouth:"normal"});
 hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
 ```
 
-h: Last app. Instagram. What you got?
+h: Останній додаток. Інстаграм. Що там?
 
 `hong({eyes:"sad"});`
 
-h: It's... more party pictures.
+h: Тут... ще більше світлин з вечірки.
 
 `hong({mouth:"sad"});`
 
-h: Everyone looks so happy. Free from worry. Free from anxiety.
+h: Усі виглядають щасливими. Вільні від думок. Вільні від тривоги.
 
 `hong({mouth:"anger"});`
 
-h: God, why can't I be like them? Why can't I just be *normal?*
+h: Боже, чому я не можу бути такою? Просто бути *нормальною?*
 
 `bb({eyes:"normal_right"});`
 
-b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+b: Про вечірку цими вихідними. Ось моє ФІНАЛЬНЕ рішення:
 
 `bb({eyes:"normal"});`
 
-[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+[Ти йдеш.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+[Ти не маєш йти.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1g_go
 
@@ -1418,39 +1417,39 @@ b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
 
 # act1h
 
-b: We sh--
+b: Ти по--
 
 ```
 bb({eyes:"wat", mouth:"small"});
 hong({body:"2_fuck"});
 ```
 
-h: *^FUCK^.*
+h: *^БЛЯТЬ^.*
 
 `hong({body:"2_you"});`
 
-h: YOU.
+h: ТИ.
 
 (...500)
 
-b: w
+b: щ
 
 (...1500)
 
 `bb({eyes:"wat_2"});`
 
-b: wha?
+b: що?
 
 `hong({body:"phone1", eyes:"anger", mouth:"anger"});`
 
-h: I'm going to say YES to that party,
+h: Я ПІДУ на вечірку,
 
 {{if _.act1g=="go"}}
-h: NOT because you want me to, but because *I* want to.
+h: Не тому що ти цього хочеш, а бо це *МОЄ* рішення.
 {{/if}}
 
 {{if _.act1g=="dont"}}
-h: Precisely BECAUSE you don't want me to.
+h: ТОМУ ЩО ти цього мені не дозволяєш.
 {{/if}}
 
 ```
@@ -1458,14 +1457,14 @@ hong({body:"putaway"});
 sfx("rustle");
 ```
 
-h: You're NOT in control of me.
+h: Ти НЕ контролюєш мене.
 
 ```
 sfx("rustle2");
 hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
 ```
 
-h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+h: А тепер вибач, я буду їсти це бутерброд в ^їбаній^ тишині.
 
 `hong({body:"2_sammich_eat"});`
 
@@ -1503,11 +1502,11 @@ b: ..................
 
 `bb({mouth:"normal"});`
 
-[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+[АГГХ ТИ ПОМРЕШ](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+[АГГХ ВСІ ТЕБЕ НЕНАВИДЯТЬ](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+[АГГХ ТИ - ЖАХЛИВА ЛЮДИНА](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
 
 # act1h_death
 
@@ -1516,7 +1515,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+b: ААГГХ ТИ ПОМРЕШ ААГГХХ
 
 ```
 hong({body:"3_defeated1"});
@@ -1534,7 +1533,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+b: ААГГХ ВСІ НАС НЕНАВИДЯТЬ ААГГХХ
 
 ```
 hong({body:"3_defeated1"});
@@ -1552,7 +1551,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+b: ААГГХ ТИ - ЖАХЛИВА ЛЮДИНА ААГГХХ
 
 ```
 hong({body:"3_defeated1"});
@@ -1570,39 +1569,39 @@ bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
 music('battle', {volume:0.5});
 ```
 
-n: CONGRATULATIONS
+n: ВІТАЮ
 
 (...500)
 
-n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+n: ТИ УСПІШНО ОБЕРІГ ФІЗИЧНІ + СОЦІАЛЬНІ + МОРАЛЬНІ ПОТРЕБИ СВОЄЇ ЛЮДИНИ!
 
-n: WHY, LOOK HOW GRATEFUL THEY ARE!
+n: ПОДИВИСЬ ЯКІ ВОНИ ПРЕКРАСНІ!
 
 (...500)
 
-n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+n: І КОЛИ ВСЯ ЕНЕРГІЯ НА НУЛІ, ТИ МОЖЕШ КОНТРОЛЮВАТИ ВСІ ЇХ ДІЇ
 
 `bb({mouth:"smile", eyes:"normal"});`
 
-n: PICK YOUR ENDING MOVE
+n: ВИБЕРИ СВІЙ ФІНАЛЬНИЙ ХІД
 
 `bb({mouth:"small_lock", eyes:"fear"});`
 
-n: *FINISH THEM*
+n: *ПРИКІНЧИ ЇХ*
 
-[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{БОРОТИСЬ: Розбий свій телефон!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{БОРОТИСЬ: Скрутись і плач!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
 `bb({mouth:"normal", eyes:"narrow"})`
 
-b: Your phone was giving you a panic attack!
+b: Твій телефон викликає у тебе тривогу!
 
 `bb({eyes:"anger"})`
 
-b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+b: Цукерберг знищує твоє психічне здоров'я для отримання капіталістичних грошей!
 
 ```
 bb({body:"fear", eyes:"fear"});
@@ -1610,7 +1609,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Punish your phone! Destroy it! Kill it!
+b: Накажи свій телефон! Знищ його! Вбий його!
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1619,7 +1618,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "fight";
 ```
 
-b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+b: ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБИЙ ВБ--
 
 (#act1j)
 
@@ -1627,7 +1626,7 @@ b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL 
 
 `bb({eyes:"fear", mouth:"normal"})`
 
-b: The whole world is filled with danger!
+b: Увесь світ наповнений небезпекою!
 
 ```
 bb({body:"fear"});
@@ -1635,7 +1634,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do like the armadillo! Curl up into a ball for self-defense!
+b: Зроби як броненосець! Скрутись у м'ячик для захисту!
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1644,7 +1643,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "flight";
 ```
 
-b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+b: СКРУТИСЬ І ПЛАЧ СКРУТИСЬ І ПЛАЧ СКРУТИСЬ І ПЛАЧ СКРУТИСЬ І ПЛАЧ СКРУТИСЬ І ПЛ-- 
 
 (#act1j)
 
