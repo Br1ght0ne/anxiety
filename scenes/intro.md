@@ -42,7 +42,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 [ВИБІР РОЗДІЛУ](#chapter-select) `Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
-[(content notes)](#intro-play-button) `Game.OVERRIDE_CHOICE_LINE=true; publish('show_cn');`
+[(примітки)](#intro-play-button) `Game.OVERRIDE_CHOICE_LINE=true; publish('show_cn');`
 
 # chapter-select
 
