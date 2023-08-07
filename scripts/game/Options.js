@@ -145,7 +145,7 @@ Loader.addSounds([
 		div.innerHTML = "";
 
 		// What's the dialogue?
-		var dialogue = Game.TEXT_SPEED<80 ? "Speak this fast" : "Speak this slow";
+		var dialogue = Game.TEXT_SPEED<80 ? "Так швидко" : "Так повільно";
 
 		// Put in the text
 		var span, chr;
